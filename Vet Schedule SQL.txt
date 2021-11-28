@@ -1,0 +1,62 @@
+C304 C306
+THURSDAY 
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-C306','C304','','','9:00:00','12:00:00','VET','Y');
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-C306','C304','','','12:00:00','14:00:00','VET','Y');
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-C306','C304','','','14:00:00','16:00:00','VET','Y');
+
+FRIDAY
+Insert into `DAV_FRIDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-C306','C304','','','9:00:00','12:00:00','VET','Y');
+Insert into `DAV_FRIDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-C306','C304','','','12:00:00','14:00:00','VET','Y');
+Insert into `DAV_FRIDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-C306','C304','','','14:00:00','16:00:00','VET','Y');
+
+////////
+B121 B123
+
+Tuesday
+
+Insert into `DAV_TUESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','8:00:00','11:00:00','VET','Y');
+Insert into `DAV_TUESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','11:00:00','14:00:00','VET','Y');
+Insert into `DAV_TUESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','14:00:00','16:00:00','VET','Y');
+Insert into `DAV_TUESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','16:00:00','18:00:00','VET','Y');
+
+Insert into `DAV_TUESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','8:00:00','11:00:00','VET','Y');
+Insert into `DAV_TUESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','11:00:00','14:00:00','VET','Y');
+Insert into `DAV_TUESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','14:00:00','16:00:00','VET','Y');
+Insert into `DAV_TUESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','16:00:00','18:00:00','VET','Y');
+
+Thursday
+
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','8:00:00','11:00:00','VET','Y');
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','11:00:00','14:00:00','VET','Y');
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','14:00:00','16:00:00','VET','Y');
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','16:00:00','18:00:00','VET','Y');
+
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','8:00:00','11:00:00','VET','Y');
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','11:00:00','14:00:00','VET','Y');
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','14:00:00','16:00:00','VET','Y');
+Insert into `DAV_THURSDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','16:00:00','18:00:00','VET','Y');
+
+
+WEDNESDAY
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','8:00:00','10:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','10:00:00','12:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','12:00:00','14:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','14:00:00','16:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','16:00:00','18:00:00','VET','Y');
+
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','8:00:00','10:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','10:00:00','12:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','12:00:00','14:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','14:00:00','16:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','16:00:00','18:00:00','VET','Y');
+
+Friday
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','8:00:00','10:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','10:00:00','12:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','12:00:00','14:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B121','B121','','','14:00:00','16:00:00','VET','Y');
+
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','8:00:00','10:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','10:00:00','12:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','12:00:00','14:00:00','VET','Y');
+Insert into `DAV_WEDNESDAY` (Class_Nbr, Facility_ID, Room, Start_Date, End_Date, Mtg_Start, Mtg_End,Room_Description, IT) Values ('99999','DAV-B123','B123','','','14:00:00','16:00:00','VET','Y');

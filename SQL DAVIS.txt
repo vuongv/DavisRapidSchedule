@@ -1,0 +1,176 @@
+
+
+ALTER TABLE `DAV_MONDAY` DROP Column `Mon`;
+ALTER TABLE `DAV_TUESDAY` DROP Column `Tues`;
+ALTER TABLE `DAV_WEDNESDAY` DROP Column `Wed`;
+ALTER TABLE `DAV_THURSDAY` DROP Column `Thu`;
+ALTER TABLE `DAV_FRIDAY` DROP Column `Fri`;
+ALTER TABLE `DAV_SATURDAY` DROP Column `Sat`;
+ALTER TABLE `DAV_SUNDAY` DROP Column `Sun`; 
+
+
+DROP Table `DAV_MONDAY`;
+DROP Table `DAV_TUESDAY`;
+DROP Table `DAV_WEDNESDAY`;
+DROP Table `DAV_THURSDAY`;
+DROP Table `DAV_FRIDAY`;
+DROP Table `DAV_SATURDAY`;
+DROP Table `DAV_SUNDAY`;
+
+ALTER TABLE `TABLE 15` RENAME TO `DAV_MONDAY`;
+ALTER TABLE `TABLE 16` RENAME TO `DAV_TUESDAY`;
+ALTER TABLE `TABLE 17` RENAME TO `DAV_WEDNESDAY`;
+ALTER TABLE `TABLE 18` RENAME TO `DAV_THURSDAY`;
+ALTER TABLE `TABLE 19` RENAME TO `DAV_FRIDAY`;
+ALTER TABLE `TABLE 20` RENAME TO `DAV_SATURDAY`;
+ALTER TABLE `TABLE 21` RENAME TO `DAV_SUNDAY`;
+
+UPDATE `DAV_MONDAY` SET `IT` = "N" WHERE `IT` = "Y";
+UPDATE `DAV_TUESDAY` SET `IT` = "N" WHERE `IT` = "Y";
+UPDATE `DAV_WEDNESDAY` SET `IT` = "N" WHERE `IT` = "Y";
+UPDATE `DAV_THURSDAY` SET `IT` = "N" WHERE `IT` = "Y";
+UPDATE `DAV_FRIDAY` SET `IT` = "N" WHERE `IT` = "Y";
+UPDATE `DAV_SATURDAY` SET `IT` = "N" WHERE `IT` = "Y";
+UPDATE `DAV_SUNDAY` SET `IT` = "N" WHERE `IT` = "Y";
+
+DELETE FROM `DAV_MONDAY` WHERE `Class_Nbr` = "";
+DELETE FROM `DAV_TUESDAY` WHERE `Class_Nbr` = "";
+DELETE FROM `DAV_WEDNESDAY` WHERE `Class_Nbr` = "";
+DELETE FROM `DAV_THURSDAY` WHERE `Class_Nbr` = "";
+DELETE FROM `DAV_FRIDAY` WHERE `Class_Nbr` = "";
+DELETE FROM `DAV_SATURDAY` WHERE `Class_Nbr` = "";
+DELETE FROM `DAV_SUNDAY` WHERE `Class_Nbr` = "";
+
+ALTER TABLE `DAV_MONDAY` MODIFY COLUMN `Mtg_Start` TIME(6);
+ALTER TABLE `DAV_MONDAY` MODIFY COLUMN `Mtg_End` TIME;
+
+ALTER TABLE `DAV_TUESDAY` MODIFY COLUMN `Mtg_Start` TIME(6);
+ALTER TABLE `DAV_TUESDAY` MODIFY COLUMN `Mtg_End` TIME;
+
+ALTER TABLE `DAV_WEDNESDAY` MODIFY COLUMN `Mtg_Start` TIME(6);
+ALTER TABLE `DAV_WEDNESDAY` MODIFY COLUMN `Mtg_End` TIME;
+
+ALTER TABLE `DAV_THURSDAY` MODIFY COLUMN `Mtg_Start` TIME(6);
+ALTER TABLE `DAV_THURSDAY` MODIFY COLUMN `Mtg_End` TIME;
+
+ALTER TABLE `DAV_FRIDAY` MODIFY COLUMN `Mtg_Start` TIME(6);
+ALTER TABLE `DAV_FRIDAY` MODIFY COLUMN `Mtg_End` TIME;
+
+
+ALTER TABLE `DAV_SATURDAY` MODIFY COLUMN `Mtg_Start` TIME(6);
+ALTER TABLE `DAV_SATURDAY` MODIFY COLUMN `Mtg_End` TIME;
+
+ALTER TABLE `DAV_SUNDAY` MODIFY COLUMN `Mtg_Start` TIME(6);
+ALTER TABLE `DAV_SUNDAY` MODIFY COLUMN `Mtg_End` TIME;
+
+
+UPDATE `DAV_MONDAY` a
+SET a.IT = "Y"
+WHERE a.Facility_ID IN ( SELECT DISTINCT e.Facility_ID from `DAV_MONDAY` e
+							Where e.Facility_ID NOT IN (Select distinct a.Facility_ID from `DAV_MONDAY` a
+														LEFT JOIN `CHECK_DAV_NOT` b 
+														ON a.Facility_ID = b.Facility_ID
+														WHERE b.Facility_ID = a.Facility_ID ));
+
+
+
+UPDATE `DAV_TUESDAY` a
+SET a.IT = "Y"
+WHERE a.Facility_ID IN ( SELECT DISTINCT e.Facility_ID from `DAV_TUESDAY` e
+							Where e.Facility_ID NOT IN (Select distinct a.Facility_ID from `DAV_TUESDAY` a
+														LEFT JOIN `CHECK_DAV_NOT` b 
+														ON a.Facility_ID = b.Facility_ID
+														WHERE b.Facility_ID = a.Facility_ID ));
+
+
+
+UPDATE `DAV_WEDNESDAY` a
+SET a.IT = "Y"
+WHERE a.Facility_ID IN ( SELECT DISTINCT e.Facility_ID from `DAV_WEDNESDAY` e
+							Where e.Facility_ID NOT IN (Select distinct a.Facility_ID from `DAV_WEDNESDAY` a
+														LEFT JOIN `CHECK_DAV_NOT` b 
+														ON a.Facility_ID = b.Facility_ID
+														WHERE b.Facility_ID = a.Facility_ID ));
+
+
+
+UPDATE `DAV_THURSDAY` a
+SET a.IT = "Y"
+WHERE a.Facility_ID IN ( SELECT DISTINCT e.Facility_ID from `DAV_THURSDAY` e
+							Where e.Facility_ID NOT IN (Select distinct a.Facility_ID from `DAV_THURSDAY` a
+														LEFT JOIN `CHECK_DAV_NOT` b 
+														ON a.Facility_ID = b.Facility_ID
+														WHERE b.Facility_ID = a.Facility_ID ));
+
+
+
+UPDATE `DAV_FRIDAY` a
+SET a.IT = "Y"
+WHERE a.Facility_ID IN ( SELECT DISTINCT e.Facility_ID from `DAV_FRIDAY` e
+							Where e.Facility_ID NOT IN (Select distinct a.Facility_ID from `DAV_FRIDAY` a
+														LEFT JOIN `CHECK_DAV_NOT` b 
+														ON a.Facility_ID = b.Facility_ID
+														WHERE b.Facility_ID = a.Facility_ID ));
+
+
+UPDATE `DAV_SATURDAY` a
+SET a.IT = "Y"
+WHERE a.Facility_ID IN ( SELECT DISTINCT e.Facility_ID from `DAV_SATURDAY` e
+							Where e.Facility_ID NOT IN (Select distinct a.Facility_ID from `DAV_SATURDAY` a
+														LEFT JOIN `CHECK_DAV_NOT` b 
+														ON a.Facility_ID = b.Facility_ID
+														WHERE b.Facility_ID = a.Facility_ID ));
+
+
+
+UPDATE `DAV_SUNDAY` a
+SET a.IT = "Y"
+WHERE a.Facility_ID IN ( SELECT DISTINCT e.Facility_ID from `DAV_SUNDAY` e
+							Where e.Facility_ID NOT IN (Select distinct a.Facility_ID from `DAV_SUNDAY` a
+														LEFT JOIN `CHECK_DAV_NOT` b 
+														ON a.Facility_ID = b.Facility_ID
+														WHERE b.Facility_ID = a.Facility_ID ));
+
+
+
+UPDATE `DAV_MONDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B144";
+UPDATE `DAV_MONDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B225";
+UPDATE `DAV_MONDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B226";
+UPDATE `DAV_MONDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B227";
+UPDATE `DAV_MONDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B228";
+
+UPDATE `DAV_TUESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B144";
+UPDATE `DAV_TUESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B225";
+UPDATE `DAV_TUESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B226";
+UPDATE `DAV_TUESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B227";
+UPDATE `DAV_TUESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B228";
+
+UPDATE `DAV_WEDNESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B144";
+UPDATE `DAV_WEDNESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B225";
+UPDATE `DAV_WEDNESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B226";
+UPDATE `DAV_WEDNESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B227";
+UPDATE `DAV_WEDNESDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B228";
+
+UPDATE `DAV_THURSDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B144";
+UPDATE `DAV_THURSDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B225";
+UPDATE `DAV_THURSDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B226";
+UPDATE `DAV_THURSDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B227";
+UPDATE `DAV_THURSDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B228";
+
+UPDATE `DAV_FRIDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B144";
+UPDATE `DAV_FRIDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B225";
+UPDATE `DAV_FRIDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B226";
+UPDATE `DAV_FRIDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B227";
+UPDATE `DAV_FRIDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B228";
+
+UPDATE `DAV_SATURDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B144";
+UPDATE `DAV_SATURDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B225";
+UPDATE `DAV_SATURDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B226";
+UPDATE `DAV_SATURDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B227";
+UPDATE `DAV_SATURDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B228";
+
+UPDATE `DAV_SUNDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B144";
+UPDATE `DAV_SUNDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B225";
+UPDATE `DAV_SUNDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B226";
+UPDATE `DAV_SUNDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B227";
+UPDATE `DAV_SUNDAY` a SET a.`IT` = "Y"  WHERE a.`Facility_ID` = "DAV-B228";

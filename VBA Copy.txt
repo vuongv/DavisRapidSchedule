@@ -1,0 +1,17 @@
+Sub ExportIndividualWorksheet()
+
+Dim ws As Worksheet
+Dim wb As Workbook
+
+For Each ws In ThisWorkbook.Worksheets
+
+    Set wb = Workbooks.Add
+    wb.SaveAs ThisWorkbook.Path & "\" & ws.Name, xlCSV
+    
+    ws.Copy before:=wb.Worksheets(1)
+    wb.Close savechanges:=True
+    
+Next ws
+
+
+End Sub

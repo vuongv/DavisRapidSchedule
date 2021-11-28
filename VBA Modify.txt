@@ -1,0 +1,133 @@
+
+// DAVIS AND HMC
+Sub ExportIndividualWorksheet()
+
+Dim ws As Worksheet
+Dim wb As Workbook
+
+For Each ws In Sheets
+
+    Set P = Range("A1:M1")
+    
+    For Each cell In P
+    On Error GoTo ErrCatcher
+        If cell.Value = "Course Title" Then
+            cell.EntireColumn.Delete
+            End If
+    On Error GoTo ErrCatcher
+        If cell.Value = "Campus" Then
+            cell.EntireColumn.Delete
+            End If
+    On Error GoTo ErrCatcher
+        If cell.Value = "Building" Then
+            cell.EntireColumn.Delete
+            End If
+            
+    On Error GoTo ErrCatcher
+        If cell.Value = "Mon" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Tues" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Wed" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Thurs" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Fri" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Sat" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Sun" Then
+            cell.Value = "IT"
+        End If
+        
+    Next cell
+        ws.Range("A1").Value = "Class_Nbr"
+        ws.Range("B1").Value = "Facility_ID"
+        ws.Range("C1").Value = "Room"
+        ws.Range("D1").Value = "Start_Date"
+        ws.Range("E1").Value = "End_Date"
+        ws.Range("F1").Value = "Mtg_Start"
+        ws.Range("G1").Value = "Mtg_End"
+        ws.Range("H1").Value = "Enrolment_Total"
+        ws.Range("I1").Value = "Room_Description"
+        ws.Range("J1").Value = "IT"
+        
+        ws.Columns("D").NumberFormat = "mm/dd/yyyy"
+        ws.Columns("E").NumberFormat = "mm/dd/yyyy"
+        ws.Columns("F").NumberFormat = "hh:mm:ss"
+        ws.Columns("G").NumberFormat = "hh:mm:ss"
+    
+Next ws
+
+
+ErrCatcher:
+    'Error Handling Code'
+    Resume Next
+    
+End Sub
+
+//TRAF
+Sub ExportIndividualWorksheet()
+
+Dim ws As Worksheet
+Dim wb As Workbook
+
+For Each ws In Sheets
+
+    Set P = Range("A1:M1")
+    
+    For Each cell In P
+    On Error GoTo ErrCatcher
+        If cell.Value = "Course Title" Then
+            cell.EntireColumn.Delete
+            End If
+    On Error GoTo ErrCatcher
+        If cell.Value = "Campus" Then
+            cell.EntireColumn.Delete
+            End If
+    On Error GoTo ErrCatcher
+        If cell.Value = "Building" Then
+            cell.EntireColumn.Delete
+            End If
+            
+    On Error GoTo ErrCatcher
+        If cell.Value = "Mon" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Tues" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Wed" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Thurs" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Fri" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Sat" Then
+            cell.Value = "IT"
+        ElseIf cell.Value = "Sun" Then
+            cell.Value = "IT"
+        End If
+        
+    Next cell
+        ws.Range("A1").Value = "Class_Nbr"
+        ws.Range("B1").Value = "Facility_ID"
+        ws.Range("C1").Value = "Start_Date"
+        ws.Range("D1").Value = "End_Date"
+        ws.Range("E1").Value = "Mtg_Start"
+        ws.Range("F1").Value = "Mtg_End"
+        ws.Range("G1").Value = "Enrolment_Total"
+        ws.Range("H1").Value = "Room_Description"
+        ws.Range("I1").Value = "IT"
+        
+        ws.Columns("C").NumberFormat = "mm/dd/yyyy"
+        ws.Columns("D").NumberFormat = "mm/dd/yyyy"
+        ws.Columns("E").NumberFormat = "hh:mm:ss"
+        ws.Columns("F").NumberFormat = "hh:mm:ss"
+    
+Next ws
+
+
+ErrCatcher:
+    'Error Handling Code'
+    Resume Next
+    
+End Sub
